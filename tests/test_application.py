@@ -11,7 +11,13 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(application.dash_insert('454793'), '4547-9-3')
 
     def test_mode(self):
-        self.assertEqual(application.mode([1,5,3,5,2,8,4,5]), 5)
+        self.assertEqual(application.mode([1, 5, 3, 5, 2, 8, 4, 5]), 5)
+
+    def test_super_increasing(self):
+        self.assertTrue(application.super_increasing([1, 3, 6, 13, 54]))
+        self.assertFalse(application.super_increasing([1, 3, 6, 13, 12]))
+
+
 
 
 if __name__ == '__main__':
