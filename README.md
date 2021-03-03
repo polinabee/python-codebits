@@ -16,4 +16,4 @@ I wanted to document my progress as I work through these challenges in one place
 * CoderByte: http://coderbyte.com
 
 ## 2021 update! 
-After many years, I am updating this with slightly better code.
+After many years, I am updating this with slightly better code, and test-driven dev structure!

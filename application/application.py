@@ -30,6 +30,7 @@ def super_increasing(arr):
         ans = 0 if arr[i] > sum(arr[:i]) else 1
     return False if ans > 0 else True
 
+
 def multiplicative_persistence(num):
     n = str(num)
     a = 0
@@ -46,3 +47,13 @@ def multiplicative_persistence(num):
 
     return a
 
+
+def matched_brackets(str):
+    p = ''
+    for s in str:
+        if s in '()':
+            p += s
+    while '()' in p:
+        p = p.replace('()', '')
+
+    return False if len(p) > 0 else True

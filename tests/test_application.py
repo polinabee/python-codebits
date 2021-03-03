@@ -20,6 +20,10 @@ class MyTestCase(unittest.TestCase):
     def test_multi_persistence(self):
         self.assertEquals(application.multiplicative_persistence(39), 3)
 
+    def test_match_brackets(self):
+        self.assertTrue(application.matched_brackets('(())'))
+        self.assertFalse(application.matched_brackets('(())((((())))'))
+
 
 
 
