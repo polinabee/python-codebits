@@ -17,6 +17,9 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(application.super_increasing([1, 3, 6, 13, 54]))
         self.assertFalse(application.super_increasing([1, 3, 6, 13, 12]))
 
+    def test_multi_persistence(self):
+        self.assertEquals(application.multiplicative_persistence(39), 3)
+
 
 
 

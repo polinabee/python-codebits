@@ -30,6 +30,19 @@ def super_increasing(arr):
         ans = 0 if arr[i] > sum(arr[:i]) else 1
     return False if ans > 0 else True
 
+def multiplicative_persistence(num):
+    n = str(num)
+    a = 0
 
-class Application:
-    pass
+    def mult(x):
+        s = 1
+        for i in range(0, len(x)):
+            s *= int(x[i])
+        return s
+
+    while len(n) > 1:
+        n = str(mult(n))
+        a += 1
+
+    return a
+
