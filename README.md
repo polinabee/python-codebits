@@ -14,3 +14,6 @@ I wanted to document my progress as I work through these challenges in one place
 * Python Docs: https://docs.python.org
 * HackerRank: http://hackerrank.com
 * CoderByte: http://coderbyte.com
+
+## 2021 update! 
+After many years, I am updating this with slightly better code, and test-driven dev structure!
