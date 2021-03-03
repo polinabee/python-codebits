@@ -18,6 +18,10 @@ def dash_insert(str):
     inserted_str += str[-1]
     return inserted_str
 
+def mode(arr):
+    a = [arr.count(n) for n in arr]
+    return arr[a.index(max(a))] if max(a) > 1 else -1
+
 
 class Application:
     pass
