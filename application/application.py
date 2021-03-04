@@ -57,3 +57,17 @@ def matched_brackets(str):
         p = p.replace('()', '')
 
     return False if len(p) > 0 else True
+
+
+# recursion example
+def trim_leading_0(num):
+    if num[0] != '0' or num == '0':
+        return num
+    else:
+        return trim_leading_0(num[1:])
+
+
+def reverse_int(num):
+    rev_str = str(num)[::-1]
+    rev_int = int(trim_leading_0(rev_str))
+    return rev_int

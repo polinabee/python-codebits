@@ -24,6 +24,10 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(application.matched_brackets('(())'))
         self.assertFalse(application.matched_brackets('(())((((())))'))
 
+    def test_reverse_int(self):
+        self.assertEquals(application.reverse_int(123),321)
+        self.assertEquals(application.reverse_int(120), 21)
+
 
 
 
