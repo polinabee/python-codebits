@@ -1,3 +1,6 @@
+from random import randrange
+
+
 def repeated_letter_count(str):
     max_reps_in_str = 0
     for word in str.split(' '):
@@ -7,6 +10,10 @@ def repeated_letter_count(str):
                 repeats_per_word += 1
     max_reps_in_str = repeats_per_word if repeats_per_word > max_reps_in_str else max_reps_in_str
     return max_reps_in_str
+
+
+def randomIntString(N):
+    return str(randrange(N))
 
 
 def dash_insert(str):
@@ -57,3 +64,39 @@ def matched_brackets(str):
         p = p.replace('()', '')
 
     return False if len(p) > 0 else True
+
+
+# let's say I want to run dash_insert...
+def main1():
+    randomIntString()
+    return dash_insert()
+
+
+def main2():
+    randomIntString(100)
+    return dash_insert()
+
+
+def main2():
+    randomIntString(100)
+    return dash_insert()
+
+
+def main3():
+    randomIntString(100)
+    return dash_insert("idklol")
+
+def main4():
+    randomIntString(100)
+    return dash_insert("123098")
+
+def final_main():
+    return dash_insert(randomIntString(6))
+
+if __name__ == "__main__":
+    # put "normal" dev process here:
+    # main1()  # oops needs an N!
+    # main2() # oops needs a str!
+    # main3()  # ValueError: invalid literal for int() with base 10: 'w'. hmmm what input do we want????
+    # main4()  # No errors... but we have no idea if what we did is right! if part of bigger pipeline it would fail in prod
+    final_main() # how it was intended to be used but you don't know if it ran as expected
